@@ -1,7 +1,7 @@
 exports.config = {
   runner: "local",
   specs: [
-    "./test/specs/**/*.js"
+    "spec/homePage.spec.js"
   ],
   exclude: [
     // 'path/to/excluded/files'
@@ -14,7 +14,7 @@ exports.config = {
   }],
   logLevel: "silent",
   bail: 0,
-  baseUrl: "http://localhost",
+  baseUrl: "http://oxcdemo.alluma.org/",
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
