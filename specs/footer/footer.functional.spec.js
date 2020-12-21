@@ -1,81 +1,81 @@
 import Footer from "../../pages/footer";
-const expected = require("../../helpers/expected.json");
+const expected = require("../../expected/footer.json");
 
 describe(" FOOTER FUNCTIONALITY ", ()=> {
 
-  describe(" LINKS ARE CLICKABLE ", ()=> {
+  describe(" LINKS ARE CLICKABLE IN FOOTER ", ()=> {
     before(()=>{
       Footer.open("");
     })
 
-    it("Validate that Footer Sub-title 'Site Link 1' should be clickable",()=> {
+    it("3.32 Validate that Footer Sub-title 'Site Link 1' should be clickable",()=> {
       expect(Footer.subTitleLink1).toBeClickable()
     });
 
-    it("Validate that Footer Sub-title 'Site Link 2' should be clickable",()=> {
+    it("3.33 Validate that Footer Sub-title 'Site Link 2' should be clickable",()=> {
       expect(Footer.subTitleLink2).toBeClickable()
     });
 
-    it("Validate that Footer Sub-title 'Site Link 2' should be clickable",()=> {
+    it("3.34 Validate that Footer Sub-title 'Site Link 2' should be clickable",()=> {
       expect(Footer.subTitlePhoneEmail).toBeClickable()
     });
 
-    it("Validate that Facebook icon is clickable",()=> {
+    it("3.35 Validate that Facebook icon is clickable",()=> {
       expect(Footer.facebookIcon).toBeClickable()
     });
 
-    it("Validate that Twitter icon is clickable",()=> {
+    it("3.36 Validate that Twitter icon is clickable",()=> {
       expect(Footer.twitterIcon).toBeClickable()
     });
 
-    it("Validate that LinkedIn icon is clickable",()=> {
+    it("3.37 Validate that LinkedIn icon is clickable",()=> {
       expect(Footer.linkedinIcon).toBeClickable()
     });
 
-    it("Validate that Footer logo 'alluma' is clickable",()=> {
+    it("3.38 Validate that Footer logo 'alluma' is clickable",()=> {
       expect(Footer.allumaLogo).toBeClickable()
     });
 
-    it("Validate that Footer text 'Alluma' is clickable",()=> {
+    it("3.39 Validate that Footer text 'Alluma' is clickable",()=> {
       expect(Footer.allumaLink).toBeClickable()
     });
 
-    it("Validate that 'Privacy Policy' link is clickable",()=> {
+    it("3.40 Validate that 'Privacy Policy' link is clickable",()=> {
       expect(Footer.privacyPolicy).toBeClickable()
     });
 
-    it("Validate that 'Non-discrimination Policy' link is clickable",()=> {
+    it("3.41 Validate that 'Non-discrimination Policy' link is clickable",()=> {
       expect(Footer.nDiscriminationPolicy).toBeClickable()
     });
 
-    it("Validate that 'Terms of Use'  link is clickable",()=> {
+    it("3.42 Validate that 'Terms of Use'  link is clickable",()=> {
       expect(Footer.termsOfUse).toBeClickable()
     });
   });
 
-  describe(" LINKS ARE WORKING ", ()=> {
+  describe(" LINKS REDIRECTION IN FOOTER ", ()=> {
     beforeEach(()=>{
       Footer.open("");
       Footer.allumaLogo.waitForDisplayed()
     })
 
-    it("Validate that clicking on Facebook icon redirects User to Alluma Facebook page",()=> {
+    it("3.43 Validate that clicking on Facebook icon redirects User to Facebook page",()=> {
       expect(Footer.getRedirectedUrl(Footer.facebookIcon)).toEqual(expected.footer.facebookUrl)
     });
 
-    it("Validate that clicking on Twitter icon redirects User to Alluma Twitter page",()=> {
+    it("3.44 Validate that clicking on Twitter icon redirects User to Twitter page",()=> {
       expect(Footer.getRedirectedUrl(Footer.twitterIcon)).toEqual(expected.footer.twitterUrl)
     });
 
-    it("Validate that clicking on LinkedIn icon redirects User to Alluma LinkedIn page",()=> {
+    it("3.45 Validate that clicking on LinkedIn icon redirects User to LinkedIn page",()=> {
       expect(Footer.linkedinHref.getAttribute("href")).toEqual(expected.footer.linkedinUrl)
     });
 
-    it("Validate that clicking on Footer logo 'alluma'  redirects User to Alluma website https://www.alluma.org/",()=> {
+    it("3.46 Validate that clicking on Footer logo 'alluma'  redirects User to Alluma website https://www.alluma.org/",()=> {
       expect(Footer.getRedirectedUrl(Footer.allumaLogo)).toEqual(expected.footer.allumaUrl)
     });
 
-    it("Validate that clicking on Footer text 'Alluma' redirects User to Alluma website https://www.alluma.org/",()=> {
+    it("3.47 Validate that clicking on Footer link 'Alluma' redirects User to Alluma website https://www.alluma.org/",()=> {
       expect(Footer.getRedirectedUrl(Footer.allumaLink)).toEqual(expected.footer.allumaUrl)
     });
   })

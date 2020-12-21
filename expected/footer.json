@@ -1,0 +1,21 @@
+{
+  "footer": {
+    "titleAbout": "About this site",
+    "subTitleLink1": "Site Link 1",
+    "subTitleLink2": "Site Link 2",
+    "titleHelp": "Get help",
+    "subTitlePhoneNumber": "888-888-8888",
+    "subTitlePhoneEmail": "Support@email.com",
+    "subTitleFax": "Fax: 777-777-7777",
+    "titleStayInTouch": "Stay in touch",
+    "facebookUrl": "https://www.facebook.com/WeAreAlluma/?ref=page_internal",
+    "twitterUrl": "https://twitter.com/WeAreAlluma",
+    "linkedinUrl": "https://www.linkedin.com/company/we-are-alluma/",
+    "allumaUrl": "https://www.alluma.org/",
+    "copyright": "Copyright 2019",
+    "allumaLinkText": "Alluma",
+    "privacyPolicy": "Privacy Policy",
+    "nDiscriminationPolicy": "Non-discrimination Policy",
+    "termsOfUse": "Terms of Use"
+  }
+}

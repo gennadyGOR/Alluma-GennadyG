@@ -1,0 +1,14 @@
+{
+  "forgotUserName": {
+    "recUsernameTitle1TXT": "CONNECTIONS",
+    "recUsernameTitle2TXT": "Recover Username",
+    "emailRequiredTXT": "Email required",
+    "forgotPassTXT": "I forgot my Password",
+    "backToLogInBtnTXT": "Back to Login",
+    "recoverUserBtnTXT": "Recover Username",
+    "emailSentMsg": "An e-mail with your username has been sent to the entered e-mail address if it corresponds to an active account.",
+    "errorMsgTXT": "The Email field is required.",
+    "forgotPasswordTitle": "Forgot Password?",
+    "title2text": "Welcome to Connections"
+  }
+}
