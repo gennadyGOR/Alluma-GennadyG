@@ -1,11 +1,16 @@
 exports.config = {
   runner: "local",
   specs: [
-    "spec/homePage.spec.js"
+    "specs/*/**.js"
   ],
-  exclude: [
-    // 'path/to/excluded/files'
-  ],
+  suites: {
+    "footer" : ["./specs/footer/*.spec.js"],
+    "forgotPassword" : ["./specs/forgotPassword/*.spec.js"],
+    "forgotUsername" : ["./specs/forgotUsername/*.spec.js"],
+    "header" : ["./specs/header/*.spec.js"],
+    "homePage" : ["./specs/homePage/*.spec.js"],
+  },
+  exclude: [],
   maxInstances: 1,
   capabilities: [{
     maxInstances: 1,
@@ -15,7 +20,7 @@ exports.config = {
   logLevel: "silent",
   bail: 0,
   baseUrl: "http://oxcdemo.alluma.org/",
-  waitforTimeout: 10000,
+  waitforTimeout: 15000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
   services: ["chromedriver"],

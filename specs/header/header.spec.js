@@ -1,9 +1,9 @@
-import Header from "../pages/header"
-const header = require("../data/expected.json").header;
+import Header from "../../pages/header"
+const header = require("../../helpers/expected.json").header;
 
 describe("HEADER",()=>{
   before(()=>{
-    Header.open("/");
+    Header.open("");
   })
 
   it("Validate that header is present",()=> {
@@ -13,4 +13,4 @@ describe("HEADER",()=>{
   it("Validate that header title have correct value",()=> {
     expect(Header.headerTitle.getText()).toEqual(header.headerTitle)
   });
-})
+});

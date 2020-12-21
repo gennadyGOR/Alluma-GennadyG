@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio",
-    "dev": "npm run clean && wdio && npm run report",
+    "test": "npx wdio wdio.conf.js",
     "report": "allure generate --clean && allure open",
-    "clean": "rm -rf allure-results"
+    "clean": "rm -rf allure-results",
+    "header": "npx wdio wdio.conf.js --suite header",
+    "footer": "npx wdio wdio.conf.js --suite footer",
+    "homePage": "npx wdio wdio.conf.js --suite homePage",
+    "forgotPassword": "npx wdio wdio.conf.js --suite forgotPassword",
+    "forgotUsername": "npx wdio wdio.conf.js --suite forgotUsername"
   },
   "keywords": [],
   "author": "Gennady Gortalov",

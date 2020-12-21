@@ -1,0 +1,11 @@
+{
+  "input": {
+    "upperLetters": "AAAA",
+    "lowerLetters": "bbb",
+    "specCharacters": "@#$",
+    "numbers": "12345",
+    "userName": "newUser",
+    "password": "pass12345",
+    "email": "new@gmail.com"
+  }
+}
