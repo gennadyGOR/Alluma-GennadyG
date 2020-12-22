@@ -15,8 +15,8 @@
 
 **npm run forgotPassword**: to run forgot password suite
 
-**npm run forgoUsername**: to run forgot username suite
+**npm run forgotUsername**: to run forgot username suite
 
 **npm run header**: to run header suite
 
-**npm run homePage**: to run homw page suite
+**npm run homePage**: to run home page suite
