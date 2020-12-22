@@ -71,7 +71,7 @@ describe("FUNCTIONALITY OF LINKS ON HOME PAGE",()=> {
     expect(HomePage.screenerLink).toBeClickable();
   });
 
-  it("2.40Validate that Forgot User Name link is clickable",()=> {
+  it("2.40 Validate that Forgot User Name link is clickable",()=> {
     expect(HomePage.forgotUsernameLink).toBeClickable();
   });
 

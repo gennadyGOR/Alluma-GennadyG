@@ -16,7 +16,7 @@ describe(" FOOTER FUNCTIONALITY ", ()=> {
       expect(Footer.subTitleLink2).toBeClickable()
     });
 
-    it("3.34 Validate that Footer Sub-title 'Site Link 2' should be clickable",()=> {
+    it("3.34 Validate that Footer Sub-title 2.2 'Support@email.com' should be clickable",()=> {
       expect(Footer.subTitlePhoneEmail).toBeClickable()
     });
 
