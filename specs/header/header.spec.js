@@ -2,7 +2,7 @@ import Header from "../../pages/header"
 const expected = require("../../expected/header.json")
 
 describe("HEADER",()=>{
-  before(()=>{
+  before(() => {
     Header.open("");
   })
 
