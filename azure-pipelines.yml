@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'macOs-latest'
 
 steps:
 - task: NodeTool@0
@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+    npm test
+  displayName: 'npm install and test'
