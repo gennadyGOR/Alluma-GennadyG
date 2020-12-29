@@ -133,4 +133,5 @@ describe("FOOTER ELEMENTS ARE PRESENT AND HAVE CORRECT VALUES", ()=> {
   it("3.32 Validate that 'Terms of Use' link have correct value",()=> {
     expect(Footer.termsOfUse.getText()).toEqual(expected.footer.termsOfUse);
   });
+
 })
