@@ -15,7 +15,7 @@ steps:
     npm test
   displayName: 'npm install and test'
 
-sschedules:
+schedules:
   - cron: "0 0 * * *"
     displayName: Daily midnight build
     branches:
