@@ -16,7 +16,7 @@ steps:
   displayName: 'npm install and test'
 
 schedules:
-  - cron: "02 19 * * *"
+  - cron: "25 19 * * *"
     displayName: Daily build
     branches:
       include:
