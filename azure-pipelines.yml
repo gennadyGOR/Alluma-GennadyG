@@ -15,9 +15,15 @@ steps:
     npm test
   displayName: 'npm install and test'
 
-schedule:
-    - cron: "30 06 * * *"
-      displayName: Daily build
-      branches:
-        include:
-          - master
+sschedules:
+  - cron: "0 0 * * *"
+    displayName: Daily midnight build
+    branches:
+      include:
+        - master
+  - cron: "0 12 * * 0"
+    displayName: Weekly Sunday build
+    branches:
+      include:
+        - master
+    always: true
