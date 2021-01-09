@@ -78,8 +78,5 @@ describe(" FOOTER FUNCTIONALITY ", ()=> {
     it("3.47 Validate that clicking on Footer link 'Alluma' redirects User to Alluma website https://www.alluma.org/",()=> {
       expect(Footer.getRedirectedUrl(Footer.allumaLink)).toEqual(expected.footer.allumaUrl)
     });
-    it("3.48 Validate that clicking on Footer link 'Alluma' redirects User to Alluma website https://www.alluma.org/",()=> {
-      expect(Footer.getRedirectedUrl(Footer.allumaLink)).toEqual(expected.footer.allumaUrl)
-    });
   })
 })
