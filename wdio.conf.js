@@ -1,9 +1,8 @@
-const data = require("./expected/info.json")
 
 exports.config = {
 
-  user: data.user,
-  key: data.pass,
+  // "user": "gennady",
+  // "pass": "G77xxqxqiDoms7oz49Cs",
   
   runner: "local",
   specs: [
@@ -18,23 +17,33 @@ exports.config = {
   },
   exclude: [],
   maxInstances: 4,
+
+  capabilities: [
+    {
+      maxInstances: 1,
+      browserName: "chrome",
+      "goog:chromeOptions": {
+        excludeSwitches: ["enable-automation"],
+      },
+    },
+  ],
   
-  capabilities: [{
-    "os" : "OS X",
-    "os_version" : "Big Sur",
-    "browserName" : "Chrome",
-    "browser_version" : "latest",
-    "resolution" : "1920x1080",
-    "browserstack.local" : "false",
-  },
-  {
-    "os" : "Windows",
-    "os_version" : "10",
-    "browserName" : "Firefox",
-    "browser_version" : "latest",
-    "resolution" : "1920x1080",
-    "browserstack.local" : "false",
-  }],
+  // capabilities: [{
+  //   "os" : "OS X",
+  //   "os_version" : "Big Sur",
+  //   "browserName" : "Chrome",
+  //   "browser_version" : "latest",
+  //   "resolution" : "1920x1080",
+  //   "browserstack.local" : "false",
+  // },
+  // {
+  //   "os" : "Windows",
+  //   "os_version" : "10",
+  //   "browserName" : "Firefox",
+  //   "browser_version" : "latest",
+  //   "resolution" : "1920x1080",
+  //   "browserstack.local" : "false",
+  // }],
   
   logLevel: "silent",
   bail: 0,
@@ -42,7 +51,7 @@ exports.config = {
   waitforTimeout: 15000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
-  services: ["browserstack"],
+  services: ["chromedriver"],
   framework: "mocha",
   reporters: ["spec",["allure", {outputDir: "allure-results"}]],
   mochaOpts: {
