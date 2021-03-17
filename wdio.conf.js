@@ -1,8 +1,8 @@
 
 exports.config = {
 
-  // "user": "gennady",
-  // "pass": "G77xxqxqiDoms7oz49Cs",
+  user: process.env.BROWSERSTACK_USERNAME,
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
   
   runner: "local",
   specs: [

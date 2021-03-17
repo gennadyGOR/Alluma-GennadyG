@@ -23,15 +23,15 @@
     "@wdio/mocha-framework": "^6.10.11",
     "@wdio/spec-reporter": "^6.10.6",
     "@wdio/sync": "^6.10.11",
-    "chromedriver": "^87.0.4",
+    "chromedriver": "^89.0.0",
     "eslint": "^7.16.0",
     "eslint-plugin-react": "^7.21.5",
     "wdio-chromedriver-service": "^6.0.4"
   },
   "dependencies": {
-  "@babel/cli": "^7.12.10",
-  "@babel/core": "^7.12.10",
-  "@babel/preset-env": "^7.12.11",
-  "@babel/register": "^7.12.10"
-}
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10"
+  }
 }
